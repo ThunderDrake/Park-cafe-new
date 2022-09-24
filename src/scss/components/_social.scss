@@ -1,0 +1,12 @@
+.social {
+  --current-color: var(--color-light);
+
+  &__icon {
+    fill: var(--current-color);
+    transition: fill 0.3s ease;
+  }
+
+  &:hover {
+    --current-color: var(--color-accent);
+  }
+}

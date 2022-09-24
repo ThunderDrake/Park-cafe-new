@@ -1,0 +1,36 @@
+.zones {
+  padding-top: 7.5em;
+  padding-bottom: 11em;
+  font-size: var(--fz-default);
+  background-color: var(--color-light-bg);
+
+  &__container {
+    padding: 1px;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 1.5em;
+    font-family: var(--font-family-second);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 155%;
+    letter-spacing: 0.05em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #264459;
+  }
+
+  &__tabs {
+    margin-bottom: 3em;
+  }
+
+  &__button {
+    &-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
