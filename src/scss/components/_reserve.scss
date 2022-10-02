@@ -1,0 +1,43 @@
+.reserve {
+  background-color: var(--color-light-bg);
+
+  &__container {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 12px;
+    font-family: var(--font-family-second);
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--color-gray-text);
+  }
+
+  &__subtitle {
+    margin-bottom: 4.5em;
+    width: 80%;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.8;
+    letter-spacing: 0.15em;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--color-gray-text);
+  }
+
+  &__form {
+    grid-column: 4 / span 6;
+  }
+
+  &__title,
+  &__subtitle {
+    grid-column: 3 / span 8;
+  }
+}
