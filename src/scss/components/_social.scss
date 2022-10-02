@@ -1,5 +1,6 @@
 .social {
   --current-color: var(--color-light);
+  --hover-color: var(--color-accent);
 
   &__icon {
     fill: var(--current-color);
@@ -7,6 +8,8 @@
   }
 
   &:hover {
-    --current-color: var(--color-accent);
+    .social__icon {
+      --current-color: var(--hover-color);
+    }
   }
 }
