@@ -1,10 +1,5 @@
-import { burger } from './functions/burger';
 import './components/init-menu-scroll';
 import './components/init-zones-tabs';
 import './components/init-reserve-form';
-window.addEventListener('DOMContentLoaded', () => {
+import './components/init-nav-scrolls';
 
-  window.addEventListener('load', () => {
-
-  });
-});
