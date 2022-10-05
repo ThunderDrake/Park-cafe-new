@@ -36,10 +36,18 @@
 
   &::before {
     top: -15px;
+
+    @media (max-width: 375px) {
+      top: -10px;
+    }
   }
 
   &::after {
     bottom: -15px;
+
+    @media (max-width: 375px) {
+      bottom: -10px;
+    }
   }
 
   &:hover {
@@ -77,8 +85,18 @@
   background-color: var(--color-main);
 }
 
+.second-part {
+  background-color: var(--color-light-bg);
+}
+
 .section-decor--first {
   position: absolute;
   left: -25%;
   top: 0;
+}
+
+.map iframe {
+  @media (max-width: 425px) {
+    height: 300px;
+  }
 }

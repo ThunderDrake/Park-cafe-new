@@ -1,5 +1,10 @@
+import { mobileCheck } from "../functions/mobile-check";
 (function () {
-  init();
+  if(mobileCheck() == 'unknown') {
+    init();
+  } else {
+    document.querySelector('.menu__content-wrapper').classList.add('menu__content-wrapper--mobile')
+  }
 
   var g_containerInViewport;
 

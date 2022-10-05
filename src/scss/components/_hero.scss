@@ -15,6 +15,15 @@
 
   &__logo {
     margin-bottom: 3em;
+
+    @media (max-width: 540px) {
+      svg {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        width: 70%;
+      }
+    }
   }
 
   &__subtitle {
@@ -22,18 +31,30 @@
 
     &-first-row {
       transform: translateX(-25%);
+
+      @media (max-width: 645px) {
+        transform: translateX(-5%);
+      }
     }
 
     &-second-row {
       margin-bottom: 0.8em;
       color: var(--color-accent);
       transform: translateX(25%);
+
+      @media (max-width: 645px) {
+        transform: translateX(5%);
+      }
     }
 
     &-small-text {
       margin-bottom: 3.5em;
       letter-spacing: 0.05em;
       text-align: center;
+
+      @media (max-width: 375px) {
+        margin-bottom: 4em;
+      }
     }
 
     &-first-row,
@@ -45,6 +66,10 @@
       line-height: 130%;
       letter-spacing: 0.05em;
       text-transform: uppercase;
+
+      @media (max-width: 325px) {
+        font-size: 1.85em;
+      }
     }
   }
 
@@ -52,5 +77,10 @@
     display: inline-grid;
     column-gap: 2em;
     grid-template-columns: repeat(2, 1fr);
+
+    @media (max-width: 375px) {
+      grid-template-columns: none;
+      row-gap: 3.5em;
+    }
   }
 }

@@ -22,7 +22,10 @@
   }
 
   &__list {
+    position: relative;
+    z-index: 1;
     margin-bottom: 4em;
+    isolation: isolate;
   }
 
   &__item {
@@ -60,10 +63,18 @@
 
     &--first {
       left: 10%;
+
+      @media (max-width: 860px) {
+        left: -10%;
+      }
     }
 
     &--second {
       right: 10%;
+
+      @media (max-width: 860px) {
+        right: -10%;
+      }
     }
   }
 }

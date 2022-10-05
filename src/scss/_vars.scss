@@ -18,6 +18,14 @@
   --color-light-bg: #f3f3f3;
   --color-accent: #ffd88f;
   --color-gray-text: #464646;
+
+  @media (max-width: 480px) {
+    --fz-default: 14px;
+  }
+
+  @media (max-width: 375px) {
+    --fz-default: 12px;
+  }
 }
 
 // Colors

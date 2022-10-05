@@ -8,12 +8,28 @@
     grid-template-columns: repeat(2, 1fr);
     border: 1px solid #464646;
     border-radius: 10px;
+
+    @media (max-width: 575px) {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   &__content {
+    margin-right: 1em;
     padding-left: 4.5em;
     font-size: 1rem;
     color: var(--color-gray-text);
+
+    @media (max-width: 1024px) {
+      padding-top: 2em;
+      padding-bottom: 2em;
+      padding-left: 3em;
+    }
+
+    @media (max-width: 800px) {
+      font-size: 0.85rem;
+    }
   }
 
   &__title {
@@ -40,11 +56,26 @@
   &__button {
     display: inline-block;
     padding: 1.3em 4.5em;
+
+    @media (max-width: 425px) {
+      padding: 1em 3.5em;
+    }
+  }
+
+  &__picture {
+    height: 100%;
   }
 
   &__picture-image {
     display: block;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+    height: 100%;
+
+    @media (max-width: 575px) {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+    }
   }
 }

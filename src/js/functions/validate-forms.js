@@ -56,7 +56,7 @@ export const validateForms = (selector, rules, afterSend) => {
       }
     }
 
-    xhr.open('POST', 'mail.php', true);
+    xhr.open('POST', 'telegram.php', true);
     xhr.send(formData);
 
     ev.target.reset();

@@ -9,6 +9,10 @@
     overflow-x: hidden;
     padding-bottom: 150px;
     padding-left: max(15px, calc((100% - var(--content-width)) / 2));
+
+    &--mobile {
+      overflow-x: scroll;
+    }
   }
 
   &__item {
@@ -38,11 +42,26 @@
     &:nth-child(even) {
       .menu__item-image {
         height: 80%;
+
+        @media (max-width: 475px) {
+          height: auto;
+        }
       }
+    }
+
+    @media (max-width: 800px) {
+      min-width: 250px;
+    }
+
+    @media (max-width: 475px) {
+      min-width: 200px;
+      min-height: 300px;
     }
   }
 
   &__title {
+    position: relative;
+    z-index: 1;
     margin: 0;
     margin-bottom: 2em;
     font-family: var(--font-family-second);

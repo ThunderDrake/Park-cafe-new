@@ -42,6 +42,11 @@
     margin-top: 4rem;
     margin-bottom: 2rem;
     max-width: 205px;
+
+    @media (max-width: 800px) {
+      margin-top: 2em;
+      margin-bottom: 0;
+    }
   }
 
   &__checkbox {
@@ -90,11 +95,20 @@
 
 .custom-checkbox__content {
   padding-left: 38px;
+
+  @media (max-width: 475px) {
+    padding-left: 28px;
+  }
 }
 
 .custom-checkbox__content::before {
   width: 24px;
   height: 24px;
+
+  @media (max-width: 475px) {
+    width: 16px;
+    height: 16px;
+  }
 }
 
 .custom-checkbox__content::after {
@@ -102,6 +116,11 @@
   height: 24px;
   background-image: url("data:image/svg+xml,%3Csvg width='14' height='13' viewBox='0 0 14 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M13.2458 0.427752C13.6429 0.683833 13.7454 1.21989 13.4708 1.60446L6.08859 11.9417C5.70696 12.4761 4.9226 12.5039 4.50414 11.9978L0.544598 7.20937C0.244045 6.8459 0.308886 6.30487 0.686817 6.02271C1.03913 5.75968 1.53583 5.81921 1.81601 6.15805L4.40464 9.28859C4.8231 9.79465 5.60746 9.76688 5.98908 9.2325L12.1236 0.642372C12.3804 0.282774 12.8744 0.188298 13.2458 0.427752Z' fill='%23464646'/%3E%3C/svg%3E%0A");
   background-size: 14px 14px;
+
+  @media (max-width: 475px) {
+    width: 16px;
+    height: 16px;
+  }
 }
 
 .custom-checkbox__field:focus + .custom-checkbox__content::before {

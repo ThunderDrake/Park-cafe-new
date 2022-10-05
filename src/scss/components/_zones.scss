@@ -33,4 +33,9 @@
       justify-content: center;
     }
   }
+
+  @media (max-width: 800px) {
+    padding-top: 6em;
+    padding-bottom: 6em;
+  }
 }
