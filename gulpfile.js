@@ -25,7 +25,7 @@ const image = require('gulp-imagemin');
 const {
   readFileSync
 } = require('fs');
-const typograf = require('gulp-typograf');
+// const typograf = require('gulp-typograf');
 const webp = require('gulp-webp');
 const avif = require('gulp-avif');
 const mainSass = gulpSass(sass);
@@ -252,10 +252,10 @@ const htmlInclude = () => {
       prefix: '@',
       basepath: '@file'
     }))
-    .pipe(typograf({
-      locale: ['ru', 'en-US'],
-      disableRule: ['ru/other/phone-number']
-    }))
+    // .pipe(typograf({
+    //   locale: ['ru', 'en-US'],
+    //   disableRule: ['ru/other/phone-number']
+    // }))
     .pipe(dest(buildFolder))
     .pipe(browserSync.stream());
 }
