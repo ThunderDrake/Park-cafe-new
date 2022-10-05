@@ -9,7 +9,7 @@
     img {
       display: block;
       width: 100%;
-      height: auto;
+      height: 100%;
     }
 
     @media (max-width: 475px) {
@@ -92,7 +92,7 @@
       line-height: normal;
       isolation: isolate;
 
-      @media (max-width: 475px) {
+      @media (max-width: 800px) {
         font-size: 1.5em;
       }
     }
@@ -108,6 +108,10 @@
 
 .tabs__images .tabs__image-wrapper {
   margin-right: 2em;
+
+  @media (max-width: 800px) {
+    margin-right: 1em;
+  }
 
   @media (max-width: 475px) {
     margin-right: 0;
@@ -179,6 +183,10 @@
     height: 10px;
     background-color: var(--color-light-bg);
     transform: translateX(-50%);
+  }
+
+  @media (max-width: 800px) {
+    height: 36px;
   }
 
   @media (max-width: 475px) {
