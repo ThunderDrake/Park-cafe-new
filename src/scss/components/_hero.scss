@@ -30,6 +30,7 @@
     color: var(--color-light);
 
     &-first-row {
+      opacity: 0;
       transform: translateX(-25%);
 
       @media (max-width: 645px) {
@@ -40,6 +41,7 @@
     &-second-row {
       margin-bottom: 0.8em;
       color: var(--color-accent);
+      opacity: 0;
       transform: translateX(25%);
 
       @media (max-width: 645px) {
