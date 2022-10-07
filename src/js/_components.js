@@ -5,4 +5,5 @@ import './components/init-nav-scrolls';
 import './components/init-modals';
 import './components/init-hero-animation';
 import './components/init-scroll-up';
+import './components/init-zones-form-changer';
 
