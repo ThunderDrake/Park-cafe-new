@@ -16,6 +16,7 @@ const initHeroAnimation = () => {
 
     tl.add({
       targets: heroLogo,
+      opacity: [1, 1],
       scale: [2, 1],
       translateY: [100, 0],
       delay: 1500

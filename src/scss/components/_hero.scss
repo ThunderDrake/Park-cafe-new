@@ -16,6 +16,11 @@
   &__logo {
     margin-bottom: 3em;
 
+    svg {
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
     @media (max-width: 540px) {
       svg {
         display: block;
@@ -53,6 +58,7 @@
       margin-bottom: 3.5em;
       letter-spacing: 0.05em;
       text-align: center;
+      opacity: 0;
 
       @media (max-width: 375px) {
         margin-bottom: 4em;
@@ -79,6 +85,7 @@
     display: inline-grid;
     column-gap: 2em;
     grid-template-columns: repeat(2, 1fr);
+    opacity: 0;
 
     @media (max-width: 375px) {
       grid-template-columns: none;
