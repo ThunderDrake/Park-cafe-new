@@ -39,6 +39,16 @@ const rules = [
       }
     ]
   },
+  {
+    ruleSelector: '.custom-checkbox__field',
+    rules: [
+      {
+        rule: 'required',
+        value: true,
+        errorMessage: 'Согласитесь с обработкой данных!'
+      }
+    ]
+  },
 ];
 const rules1 = [
   {
@@ -77,6 +87,16 @@ const rules1 = [
         rule: 'required',
         value: true,
         errorMessage: 'Заполните количество гостей!'
+      }
+    ]
+  },
+  {
+    ruleSelector: '.custom-checkbox__field',
+    rules: [
+      {
+        rule: 'required',
+        value: true,
+        errorMessage: 'Согласитесь с обработкой данных!'
       }
     ]
   },
