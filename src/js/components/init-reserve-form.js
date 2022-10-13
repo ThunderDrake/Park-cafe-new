@@ -105,6 +105,11 @@ const rules1 = [
 
 const afterForm = () => {
   modal.close();
+  new GraphModal().open('thankyou');
+
+  setTimeout(() => {
+    modal.close();
+  }, 5000);
 };
 
 validateForms('.reserve__form', rules, afterForm);
