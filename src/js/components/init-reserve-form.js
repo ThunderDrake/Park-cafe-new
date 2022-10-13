@@ -1,4 +1,5 @@
 import { validateForms } from '../functions/validate-forms';
+import modal from "./init-modals.js"
 const rules = [
   {
     ruleSelector: '.form__input--name',
@@ -103,7 +104,7 @@ const rules1 = [
 ];
 
 const afterForm = () => {
-  console.log('Произошла отправка, тут можно писать любые действия');
+  modal.close();
 };
 
 validateForms('.reserve__form', rules, afterForm);
