@@ -7,15 +7,15 @@
       <form action="#" class="modal__form form">
         <label class="form__label">
           <span class="form__label-text">Ваше имя</span>
-          <input type="text" name="Имя" class="input-reset form__input form__input--name" placeholder="Иван">
+          <input type="text" name="name" class="input-reset form__input form__input--name" placeholder="Иван">
         </label>
         <label class="form__label">
           <span class="form__label-text">Ваш телефон</span>
-          <input type="tel" name="Телефон" class="input-reset form__input form__input--tel" placeholder="+7 (---) --- -- --">
+          <input type="tel" name="phone" class="input-reset form__input form__input--tel" placeholder="+7 (---) --- -- --">
         </label>
         <label class="form__label">
           <span class="form__label-text">Какой хотели бы зал?</span>
-          <select id="zoneSelect">
+          <select id="zoneSelect" name="zone">
             <option value="Веранда">Веранда</option>
             <option value="Первый этаж">Первый этаж</option>
             <option value="Второй этаж">Второй этаж</option>
@@ -23,7 +23,7 @@
         </label>
         <label class="form__label">
           <span class="form__label-text">Количество гостей</span>
-          <input type="number" name="Количество гостей" class="input-reset form__input form__input--guest" placeholder="50 - 60 человек">
+          <input type="number" name="guests" class="input-reset form__input form__input--guest" placeholder="50 - 60 человек">
         </label>
         <button class="btn-reset form__btn button button--light">Забронировать</button>
         <label class="custom-checkbox form__checkbox">
