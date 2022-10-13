@@ -1,5 +1,7 @@
 import { validateForms } from '../functions/validate-forms';
 import modal from "./init-modals.js"
+import GraphModal from 'graph-modal';
+
 const rules = [
   {
     ruleSelector: '.form__input--name',

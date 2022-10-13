@@ -45,19 +45,19 @@ export const validateForms = (selector, rules, afterSend) => {
 
     let xhr = new XMLHttpRequest();
 
-    xhr.onreadystatechange = function () {
-      if (xhr.readyState === 4) {
-        if (xhr.status === 200) {
-          if (afterSend) {
-            afterSend();
-          }
-          console.log('Отправлено');
-        }
-      }
-    }
+    afterSend();
+    // xhr.onreadystatechange = function () {
+    //   if (xhr.readyState === 4) {
+    //     if (xhr.status === 200) {
+    //       if (afterSend) {
+    //       }
+    //       console.log('Отправлено');
+    //     }
+    //   }
+    // }
 
-    xhr.open('POST', 'telegram.php', true);
-    xhr.send(formData);
+    // xhr.open('POST', 'telegram.php', true);
+    // xhr.send(formData);
 
     ev.target.reset();
   })
