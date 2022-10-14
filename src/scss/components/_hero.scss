@@ -1,4 +1,5 @@
 .hero {
+  overflow-x: hidden;
   height: 100vh;
   font-size: var(--fz-default);
   background-image: url("../img/hero/hero__background.png");
@@ -75,7 +76,7 @@
       letter-spacing: 0.05em;
       text-transform: uppercase;
 
-      @media (max-width: 325px) {
+      @media (max-width: 395px) {
         font-size: 1.85em;
       }
     }

@@ -20,6 +20,10 @@
     text-align: center;
     text-transform: uppercase;
     color: #264459;
+
+    @media (max-width: 395px) {
+      font-size: 1.65em;
+    }
   }
 
   &__tabs {
