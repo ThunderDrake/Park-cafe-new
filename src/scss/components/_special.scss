@@ -72,6 +72,15 @@
       font-weight: 700;
     }
 
+    &--bg-white {
+      margin-top: 1em;
+      padding: 0.8em 1em;
+      font-size: 2em;
+      text-align: center;
+      color: var(--color-dark);
+      background-color: var(--color-light);
+    }
+
     @media (max-width: 800px) {
       font-size: 1em;
     }
