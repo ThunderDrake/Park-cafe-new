@@ -3,13 +3,16 @@
   padding-bottom: 9em;
   font-size: var(--fz-default);
   background-image: url("../img/special/special__background.png");
+  background-position: 30% center;
   background-size: cover;
   background-repeat: no-repeat;
+  transform: scaleX(-1);
 
   &__content {
     margin-right: 0;
     margin-left: auto;
     max-width: 32em;
+    transform: scaleX(-1);
 
     @media (max-width: 800px) {
       position: relative;
