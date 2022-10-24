@@ -4,6 +4,7 @@ import Inputmask from "inputmask";
 export const validateForms = (selector, rules, afterSend) => {
   const form = document?.querySelector(selector);
   const telSelector = form?.querySelector('input[type="tel"]');
+  const dateSelector = form?.querySelector('[data-input="date"]');
 
   if (!form) {
     console.error('Нет такого селектора!');
@@ -28,6 +29,24 @@ export const validateForms = (selector, rules, afterSend) => {
             return phone.length === 10;
           },
           errorMessage: item.telError
+        });
+      }
+    }
+  }
+
+  if (dateSelector) {
+    const inputMask = new Inputmask('99.99.9999 99:99');
+    inputMask.mask(dateSelector);
+
+    for (let item of rules) {
+      if (item.date) {
+        item.rules.push({
+          rule: 'function',
+          validator: function() {
+            const date = dateSelector.inputmask.unmaskedvalue();
+            return date.length === 12;
+          },
+          errorMessage: item.dateError
         });
       }
     }

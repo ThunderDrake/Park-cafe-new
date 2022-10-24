@@ -52,6 +52,18 @@ const rules = [
       }
     ]
   },
+  {
+    ruleSelector: '.form__input--date',
+    date: true,
+    dateError: 'Введите корректную дату и время',
+    rules: [
+      {
+        rule: 'minLength',
+        value: 12,
+        errorMessage: 'Введите корректную дату и время'
+      }
+    ]
+  },
 ];
 const rules1 = [
   {
@@ -100,6 +112,18 @@ const rules1 = [
         rule: 'required',
         value: true,
         errorMessage: 'Согласитесь с обработкой данных!'
+      }
+    ]
+  },
+  {
+    ruleSelector: '.form__input--date',
+    date: true,
+    dateError: 'Введите корректную дату и время',
+    rules: [
+      {
+        rule: 'minLength',
+        value: 12,
+        errorMessage: 'Введите корректную дату и время'
       }
     ]
   },
