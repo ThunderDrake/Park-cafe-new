@@ -59,7 +59,7 @@ const rules = [
     rules: [
       {
         rule: 'minLength',
-        value: 12,
+        value: 8,
         errorMessage: 'Введите корректную дату и время'
       }
     ]
@@ -122,7 +122,7 @@ const rules1 = [
     rules: [
       {
         rule: 'minLength',
-        value: 12,
+        value: 8,
         errorMessage: 'Введите корректную дату и время'
       }
     ]

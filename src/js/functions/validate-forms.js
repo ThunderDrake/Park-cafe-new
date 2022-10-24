@@ -35,7 +35,7 @@ export const validateForms = (selector, rules, afterSend) => {
   }
 
   if (dateSelector) {
-    const inputMask = new Inputmask('99.99.9999 99:99');
+    const inputMask = new Inputmask('99.99.9999');
     inputMask.mask(dateSelector);
 
     for (let item of rules) {
@@ -44,7 +44,7 @@ export const validateForms = (selector, rules, afterSend) => {
           rule: 'function',
           validator: function() {
             const date = dateSelector.inputmask.unmaskedvalue();
-            return date.length === 12;
+            return date.length === 8;
           },
           errorMessage: item.dateError
         });
