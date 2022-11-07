@@ -1,8 +1,9 @@
 .hero {
+  @include image-set("../img/hero/hero__background");
+
   overflow-x: hidden;
   height: 100vh;
   font-size: var(--fz-default);
-  background-image: url("../img/hero/hero__background.png");
   background-size: cover;
   background-repeat: no-repeat;
 
