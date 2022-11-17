@@ -1,0 +1,39 @@
+.zone-view {
+  padding-top: 7.5em;
+  font-size: var(--fz-default);
+  background-color: var(--color-light-bg);
+
+  &__title {
+    margin: 0;
+    margin-bottom: 1.5em;
+    font-family: var(--font-family-second);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 155%;
+    letter-spacing: 0.05em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #264459;
+
+    @media (max-width: 395px) {
+      font-size: 1.65em;
+    }
+  }
+
+  &__view {
+    height: 600px;
+
+    @media (max-width: 1024px) {
+      height: 450px;
+    }
+
+    @media (max-width: 768px) {
+      height: 400px;
+    }
+  }
+
+  @media (max-width: 800px) {
+    padding-top: 5em;
+  }
+}
