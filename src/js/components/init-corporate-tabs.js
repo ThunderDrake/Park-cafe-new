@@ -1,8 +1,8 @@
 import GraphTabs from 'graph-tabs';
-const tabs = new GraphTabs('zones-tabs');
+const tabs = new GraphTabs('corporate-tabs');
 
-const tabsButtons = document.querySelectorAll('.zones .tabs__nav-btn');
-const decorElem = document.querySelector('.zones .active-slide-decor');
+const tabsButtons = document.querySelectorAll('.corporate-tabs .tabs__nav-btn');
+const decorElem = document.querySelector('.corporate-tabs .active-slide-decor');
 
 Array.prototype.forEach.call(tabsButtons, function(button, index) {
   button.addEventListener('click', ()=>{

@@ -61,7 +61,6 @@ export const validateForms = (selector, rules, afterSend) => {
 
   validation.onSuccess((ev) => {
     let formData = new FormData(ev.target);
-
     let xhr = new XMLHttpRequest();
 
     xhr.onreadystatechange = function () {

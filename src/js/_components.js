@@ -6,4 +6,5 @@ import './components/init-modals';
 import './components/init-hero-animation';
 import './components/init-scroll-up';
 import './components/init-zones-form-changer';
+import './components/init-corporate-tabs';
 
